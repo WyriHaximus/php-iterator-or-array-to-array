@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.com/WyriHaximus/php-iterator-or-array-to-array.svg?branch=master)](https://travis-ci.com/WyriHaximus/php-iterator-or-array-to-array)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus/iterator-or-array-to-array/v/stable.png)](https://packagist.org/packages/wyrihaximus/iterator-or-array-to-array)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus/iterator-or-array-to-array/downloads.png)](https://packagist.org/packages/wyrihaximus/iterator-or-array-to-array/stats)
-[![Code Coverage](https://scrutinizer-ci.com/g/wyrihaximus/php-iterator-or-array-to-array/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/wyrihaximus/php-iterator-or-array-to-array/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/php-iterator-or-array-to-array/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/php-iterator-or-array-to-array/?branch=master)
 [![License](https://poser.pugx.org/wyrihaximus/iterator-or-array-to-array/license.png)](https://packagist.org/packages/wyrihaximus/iterator-or-array-to-array)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/php-iterator-or-array-to-array/badge.svg)](https://travis-ci.org/WyriHaximus/php-iterator-or-array-to-array)
+[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/php-iterator-or-array-to-array/badge.svg)](https://travis-ci.com/WyriHaximus/php-iterator-or-array-to-array)
 
 # Install
 
