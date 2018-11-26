@@ -12,7 +12,8 @@
     "php": "^7.2"
   },
   "require-dev": {
-    "api-clients/test-utilities": "^5.1"
+    "api-clients/cs-fixer-config": "^1.1",
+    "api-clients/test-utilities": "^5.2"
   },
   "autoload": {
     "files": [

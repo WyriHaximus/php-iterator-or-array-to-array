@@ -5,6 +5,9 @@ namespace WyriHaximus\Tests;
 use ApiClients\Tools\TestUtilities\TestCase;
 use function WyriHaximus\iteratorOrArrayToArray;
 
+/**
+ * @internal
+ */
 final class FunctionalTest extends TestCase
 {
     public function provideIterables(): iterable
