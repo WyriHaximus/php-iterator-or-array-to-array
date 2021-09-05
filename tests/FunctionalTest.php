@@ -1,8 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\Tests;
 
-use ApiClients\Tools\TestUtilities\TestCase;
+use ArrayIterator;
+use CallbackFilterIterator;
+use WyriHaximus\TestUtilities\TestCase;
+
 use function WyriHaximus\iteratorOrArrayToArray;
 
 /**
@@ -10,6 +15,9 @@ use function WyriHaximus\iteratorOrArrayToArray;
  */
 final class FunctionalTest extends TestCase
 {
+    /**
+     * @return iterable<array<array<string>|iterable<string>>>
+     */
     public function provideIterables(): iterable
     {
         yield [
@@ -18,14 +26,14 @@ final class FunctionalTest extends TestCase
         ];
 
         yield [
-            new \ArrayIterator(['a']),
+            new ArrayIterator(['a']),
             ['a'],
         ];
 
         yield [
-            new \CallbackFilterIterator(
-                new \ArrayIterator(['a', 0, '0', 'd', 'b', 'c']),
-                function ($item) {
+            new CallbackFilterIterator(
+                new ArrayIterator(['a', 0, '0', 'd', 'b', 'c']),
+                static function ($item): bool {
                     return $item === 'a';
                 }
             ),
@@ -33,7 +41,7 @@ final class FunctionalTest extends TestCase
         ];
 
         yield [
-            (function (): iterable {
+            (static function (): iterable {
                 yield 'a';
             })(),
             ['a'],
@@ -41,6 +49,9 @@ final class FunctionalTest extends TestCase
     }
 
     /**
+     * @param iterable<string> $iterable
+     * @param array<string>    $array
+     *
      * @dataProvider provideIterables
      */
     public function testTestIterable(iterable $iterable, array $array): void
